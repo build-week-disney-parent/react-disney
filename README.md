@@ -18,7 +18,7 @@
 
 Pitch: Magic at Your Fingertips- find parents at the park to swap childcare and stroller passes with! Enhance your Disney Experience as parents by connecting with other parents, allowing you to go on all the 'big kid' rides together.
 
-For the MVP Create:
+##### For the MVP Create:
 
 - An on-boarding process for parents
 - On-boarding process for a volunteer experienced business owner
@@ -27,5 +27,5 @@ For the MVP Create:
 - Ability for anyone to easily search / find posted requests (filter by time, location place, general search)
 - Ability for a second parent user to log in and respond to the request
 
-Stretch:
+##### Stretch:
 Use a notification API like Twilio (https://www.twilio.com/) or Growl (http://growl.info/) for notifications when your request has been answered, or when new requests are posted.
