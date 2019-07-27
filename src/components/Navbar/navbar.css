@@ -21,3 +21,7 @@ li {
   font-size: 2.2rem;
   color: white;
 }
+
+.link {
+  text-decoration: none;
+}
