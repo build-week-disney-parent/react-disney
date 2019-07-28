@@ -3,6 +3,28 @@
 }
 
 .container {
-  width: 80%;
+  width: 40vw;
   margin: 0 auto;
+}
+
+.control-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px 0 0 0;
+}
+
+.form-box {
+  margin: 0 auto;
+}
+
+.active {
+  background: rgba(77, 75, 75, 0.1);
+  padding: 1rem 3rem;
+  border-radius: 15px;
+}
+
+.control-p {
+  font-size: 3.4rem;
+  cursor: pointer;
 }
