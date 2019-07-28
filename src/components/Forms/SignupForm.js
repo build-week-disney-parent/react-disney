@@ -9,11 +9,26 @@ export default class SignupForm extends Component {
         <h2>Register for Disney Parent</h2>
         <form>
           <label>Username</label>
-          <input className="input" type="text" placeholder="Username" />
+          <input
+            className="input"
+            name="name"
+            type="text"
+            placeholder="Username"
+          />
           <label>Email</label>
-          <input className="input" type="text" placeholder="Email" />
+          <input
+            className="input"
+            name="email"
+            type="email"
+            placeholder="Email"
+          />
           <label>Password</label>
-          <input className="input" type="text" placeholder="Password" />
+          <input
+            className="input"
+            name="pwd"
+            type="password"
+            placeholder="Password"
+          />
           <button>Register</button>
         </form>
       </div>

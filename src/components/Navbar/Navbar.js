@@ -11,10 +11,7 @@ export default function Navbar() {
       />
       <ul className="nav-links">
         <Link className="link" to="/signin">
-          <li>Sign In</li>
-        </Link>
-        <Link className="link" to="/signup">
-          <li>Sign Up</li>
+          <li>Sign In / Sign Up</li>
         </Link>
       </ul>
     </header>
