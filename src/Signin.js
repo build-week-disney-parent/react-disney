@@ -27,7 +27,7 @@ function Signin() {
           <p className="control-p">Sign Up</p>
         </div>
       </div>
-      {isSignin ? <SigninForm /> : <SignupForm />}
+      {isSignin ? <SignupForm /> : <SigninForm />}
     </div>
   );
 }
