@@ -7,7 +7,8 @@ export default function Navbar() {
     <header className="navbar">
       <Link to="/dashboard">
         <img
-          src="https://fontmeme.com/permalink/190724/8f2bd2e8d36ee8f404723b6c674e437a.png"
+          // src="https://fontmeme.com/permalink/190724/8f2bd2e8d36ee8f404723b6c674e437a.png"
+          src="https://fontmeme.com/permalink/190731/15a20cff2c4602b960dbbe6a691e1ac6.png"
           alt="Disney Parent logo"
         />
       </Link>
