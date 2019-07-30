@@ -1,16 +1,18 @@
-# Disney Parent Web App 
+# [Disney Parent Web App](https://react-disney.netlify.com/)
+
 ## (Jul 24, 2019 - Aug 5, 2019)
 
 ## Built for Lambda School Build Week (React Front End Developer) and (UI/UX Developer).
 
 - [Zac Smith (React Developer)](https://github.com/zrsmith75)
 - [Nicolas Gallucci (UI/UX)](https://github.com/CryptoN999)
-- [Jules (UI/UX)](https://github.com/chefboyrdeuce)
+- [Jules Pierre-Louis (UI/UX)](https://github.com/chefboyrdeuce)
 - [Joseph Alfaro (Backend Developer)](https://github.com/Joe-Alfaro)
 
 ### This web app in built in React using the following:
 
 - React Router
+- Axios
 
 ### MVP Guidelines
 
@@ -28,4 +30,5 @@ Pitch: Magic at Your Fingertips- find parents at the park to swap childcare and 
 - Ability for a second parent user to log in and respond to the request
 
 ##### Stretch:
+
 Use a notification API like Twilio (https://www.twilio.com/) or Growl (http://growl.info/) for notifications when your request has been answered, or when new requests are posted.
