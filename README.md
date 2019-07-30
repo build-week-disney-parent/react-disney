@@ -9,10 +9,13 @@
 - [Jules Pierre-Louis (UI/UX)](https://github.com/chefboyrdeuce)
 - [Joseph Alfaro (Backend Developer)](https://github.com/Joe-Alfaro)
 
-### This web app in built in React using the following:
+### This web app in built using the following:
 
+- NPM (create-react-app)
+- React
 - React Router
 - Axios
+- Netlify
 
 ### MVP Guidelines
 
