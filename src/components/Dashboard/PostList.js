@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 import Post from "./Post";
 
-export default class PostLists extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+export default class PostLists extends Component {
+  // constructor(props) {
+  //   super(props);
+  // }
 
   render() {
     return (
