@@ -6,7 +6,8 @@ export default class Dashboard extends React.Component {
   state = {
     parents: [],
     posts: [],
-    comments: []
+    comments: [],
+    signedIn: false
   };
 
   componentDidMount() {
