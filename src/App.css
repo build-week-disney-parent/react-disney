@@ -22,6 +22,9 @@
   background: rgba(77, 75, 75, 0.1);
   padding: 1rem 3rem;
   border-radius: 15px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
 }
 
 .control-p {
@@ -34,8 +37,15 @@
 }
 
 .post-badge {
-  background: rgb(231, 229, 229);
+  background: rgba(231, 229, 229);
   margin: 1rem 0;
+  padding: 2rem;
+  border: 1px solid #d4d4d6;
+  border-radius: 1rem;
+  /* box-shadow: 0.5rem 0.5rem 0.3rem rgba(173, 174, 178, 0.3); */
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
 }
 
 /* #loader {
