@@ -25,8 +25,10 @@ export default class Dashboard extends React.Component {
     axios
       .get(`https://disneyparent-backend.herokuapp.com/parents`)
       .then(res => {
-        this.setState({ parents: res.data, loading: false });
+        this.setState({ parents: res.data });
       });
+
+    this.setState({ loading: false });
   }
 
   render() {
@@ -34,7 +36,9 @@ export default class Dashboard extends React.Component {
     return (
       <div>
         <h2>Dashboard</h2>
-        <div className="loader">{loading ? <h2>Loading ... </h2> : ""}</div>
+        <div className="loader">
+          {loading ? <h2>Loading ... </h2> : <h2>Most Recent Comments:</h2>}
+        </div>
 
         <PostLists posts={this.state.posts} />
 

@@ -9,7 +9,6 @@ export default class PostLists extends React.Component {
   render() {
     return (
       <div>
-        <h2>PostList</h2>
         {this.props.posts.reverse().map(post => (
           <Post post={post} key={post.id} />
         ))}
