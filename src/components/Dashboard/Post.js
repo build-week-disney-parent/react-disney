@@ -7,6 +7,7 @@ export default function Post(props) {
       <p>Where: {props.post.attraction}</p>
       <p>Chilren: {props.post.children} </p>
       <p>When: {props.post.time}</p>
+      <p className="post-control">reply | edit | delete</p>
     </article>
   );
 }
