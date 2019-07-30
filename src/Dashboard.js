@@ -25,28 +25,41 @@ export default class Dashboard extends React.Component {
     axios
       .get(`https://disneyparent-backend.herokuapp.com/parents`)
       .then(res => {
-        this.setState({ parents: res.data, loading: false });
+        this.setState({ parents: res.data });
       });
+
+    // this.setState({ loading: false });
+    setTimeout(() => {
+      this.setState({ loading: false });
+    }, 1000);
   }
 
   render() {
     const loading = this.state.loading;
-    return (
-      <div>
-        <h2>Dashboard</h2>
-        <div className="loader">{loading ? <h2>Loading ... </h2> : ""}</div>
 
-        <PostLists posts={this.state.posts} />
+    if (loading === true) {
+      return <div id="loader" />;
+    } else {
+      return (
+        <div>
+          <h2>Dashboard</h2>
+          {/* <div className="loader">
+            {loading ? <h2>Loading ... </h2> : <h2>Most Recent Comments:</h2>}
+          </div> */}
 
-        {/* {this.state.comments.map(comment => (
-          <li>{comment.comment}</li>
-        ))}
+          <PostLists posts={this.state.posts} />
 
-        {this.state.parents.map(parent => (
-          <li>{parent.username}</li>
-        ))} */}
-        <h3>end</h3>
-      </div>
-    );
+          <h3>end</h3>
+        </div>
+      );
+    }
   }
 }
+
+//  {/* {this.state.comments.map(comment => (
+//           <li>{comment.comment}</li>
+//         ))}
+
+//         {this.state.parents.map(parent => (
+//           <li>{parent.username}</li>
+//         ))} */}

@@ -48,13 +48,14 @@
   box-shadow: 0 8px 6px -6px black;
 }
 
-/* #loader {
+#loader {
   border: 1.6rem solid white;
   border-radius: 50%;
-  border-top: 1.6rem solid #56a5eb;
+  border-top: 1.6rem solid #4766e7;
   width: 12rem;
   height: 12rem;
   animation: spin 2s linear infinite;
+  margin: 25vh auto;
 }
 
 @keyframes spin {
@@ -63,4 +64,5 @@
   }
   100% {
     transform: rotate(360deg);
-  } */
+  }
+}
