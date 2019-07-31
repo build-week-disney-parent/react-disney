@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import PostLists from "./components/Dashboard/PostList";
 import Search from "./components/Dashboard/Seach";
+import CreatePost from "./components/Dashboard/CreatePost";
 
 export default class Dashboard extends Component {
   state = {
@@ -48,6 +49,7 @@ export default class Dashboard extends Component {
         <div>
           <h2>Welcome NAME to your dashboard:</h2>
           <Search />
+          <CreatePost />
           <PostLists posts={this.state.posts} />
           <h3>end</h3>
         </div>
