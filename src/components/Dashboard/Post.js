@@ -1,5 +1,4 @@
 import React from "react";
-import { genericTypeAnnotation } from "@babel/types";
 
 export default function Post(props) {
   return (
@@ -10,15 +9,15 @@ export default function Post(props) {
       <p>When: {props.post.time}</p>
       <p className="post-control">
         <span className="post-control-span">
-          <i class="fas fa-reply" style={replyStyle} />
+          <i className="fas fa-reply" style={replyStyle} />
           reply
         </span>
         <span className="post-control-span">
-          <i class="fas fa-edit" style={editStyle} />
+          <i className="fas fa-edit" style={editStyle} />
           edit
         </span>
         <span className="post-control-span">
-          <i class="fas fa-trash" style={deleteStyle} />
+          <i className="fas fa-trash" style={deleteStyle} />
           delete
         </span>
       </p>
