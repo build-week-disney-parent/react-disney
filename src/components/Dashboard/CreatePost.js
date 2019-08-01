@@ -92,12 +92,12 @@ export default class CreatePost extends Component {
             />
             <label>Time</label>
             <input
-              type="datetime-local  "
+              type="datetime-local"
               className="input"
               name="time"
               value={this.state.time}
               onChange={this.handleChange}
-              placeholder="What time do you need help?"
+              placeholder="What is the date and time you need help?"
               required
             />
             <button type="submit">create post</button>

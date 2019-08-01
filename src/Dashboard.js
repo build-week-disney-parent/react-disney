@@ -52,7 +52,7 @@ export default class Dashboard extends Component {
       return <div id="loader" />;
     } else {
       return (
-        <React.Fragment className="dashb">
+        <React.Fragment>
           <h2 className="dashb-welcome">Welcome NAME to your dashboard:</h2>
           <Search />
           <CreatePost />
