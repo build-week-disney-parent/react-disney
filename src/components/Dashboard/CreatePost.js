@@ -4,12 +4,11 @@ import form from "./dashboard.css";
 
 export default class CreatePost extends Component {
   state = {
-    posts: {
-      // title: '',
-      // attraction: '',
-      // children: '',
-      // time: ''
-    }
+    title: "",
+    attraction: "",
+    children: "",
+    time: "",
+    parent_id: 10
   };
 
   handleChange = e => {
@@ -19,14 +18,12 @@ export default class CreatePost extends Component {
   handleSubmit = e => {
     e.preventDefault();
 
-    const posts = {
-      title: this.state.posts.title
-    };
+    // const posts = {
+    //   title: this.state.posts.title
+    // };
 
     axios
-      .post(`https://disneyparent-backend.herokuapp.com/auth/parents/login`, {
-        posts
-      })
+      .post(`https://disneyparent-backend.herokuapp.com/posts`, this.state)
       .then(res => {
         console.log(res);
         console.log(res.data);
@@ -51,6 +48,7 @@ export default class CreatePost extends Component {
   };
 
   render() {
+    // const [title, attraction, children, time] = this.state.posts;
     return (
       <div>
         <div
@@ -67,6 +65,7 @@ export default class CreatePost extends Component {
               type="text"
               className="input"
               name="title"
+              value={this.state.title}
               onChange={this.handleChange}
               placeholder="Title of your post?"
             />
@@ -75,6 +74,7 @@ export default class CreatePost extends Component {
               type="text"
               className="input"
               name="attraction"
+              value={this.state.attraction}
               onChange={this.handleChange}
               placeholder="Which attraction do you need help at?"
             />
@@ -83,6 +83,7 @@ export default class CreatePost extends Component {
               type="text"
               className="input"
               name="children"
+              value={this.state.children}
               onChange={this.handleChange}
               placeholder="How many children?"
             />
@@ -91,6 +92,7 @@ export default class CreatePost extends Component {
               type="text"
               className="input"
               name="time"
+              value={this.state.time}
               onChange={this.handleChange}
               placeholder="What time do you need help?"
             />

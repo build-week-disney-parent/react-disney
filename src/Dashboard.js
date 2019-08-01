@@ -39,6 +39,12 @@ export default class Dashboard extends Component {
     }, 2000);
   }
 
+  componentDidUpdate() {
+    axios.get(`https://disneyparent-backend.herokuapp.com/posts`).then(res => {
+      this.setState({ posts: res.data });
+    });
+  }
+
   render() {
     const loading = this.state.loading;
 
