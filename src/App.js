@@ -5,7 +5,7 @@ import Signin from "./Signin";
 import Dashboard from "./Dashboard";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <div className="app">
@@ -19,6 +19,6 @@ function App() {
       </div>
     </Router>
   );
-}
+};
 
 export default App;
