@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import form from "./dashboard.css";
+import "./dashboard.css";
 
 export default class CreatePost extends Component {
   state = {

@@ -4,6 +4,7 @@
   justify-content: center;
   flex-direction: column;
   width: 40vw;
+  min-width: 350px;
   text-align: center;
   margin: 10% auto;
   min-height: 200px;
@@ -14,6 +15,12 @@
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 8px 6px -6px black;
+}
+
+@media (max-width: 100px) {
+  .sign-up-form {
+    width: 50vw;
+  }
 }
 
 .input {

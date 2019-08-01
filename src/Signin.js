@@ -15,7 +15,7 @@ function Signin() {
   };
 
   return (
-    <div className="container">
+    <div>
       <div className="control-box">
         <div className={`${isSignin ? "" : "active"}`} onClick={handleSignin}>
           <p className="control-p">Sign In</p>

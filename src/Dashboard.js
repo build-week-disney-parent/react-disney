@@ -52,13 +52,16 @@ export default class Dashboard extends Component {
       return <div id="loader" />;
     } else {
       return (
-        <div>
-          <h2>Welcome NAME to your dashboard:</h2>
+        <React.Fragment className="dashb">
+          <h2 className="dashb-welcome">Welcome NAME to your dashboard:</h2>
           <Search />
           <CreatePost />
           <PostLists posts={this.state.posts} />
           <h3>end</h3>
-        </div>
+          {/* {this.state.parents.map(parent => (
+            <h2>{parent.username}</h2>
+          ))} */}
+        </React.Fragment>
       );
     }
   }
@@ -74,6 +77,6 @@ export default class Dashboard extends Component {
 //           <li>{comment.comment}</li>
 //         ))}
 
-//         {this.state.parents.map(parent => (
-//           <li>{parent.username}</li>
-//         ))} */}
+// {this.state.parents.map(parent => (
+//   <li>{parent.username}</li>
+// ))} */}

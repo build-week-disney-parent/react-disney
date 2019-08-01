@@ -59,6 +59,14 @@ button:hover {
   text-transform: uppercase;
 }
 
+@media (max-width: 799px) {
+  #createPostForm {
+    /* height: auto; */
+    margin-top: 2rem;
+    background: rgba(231, 229, 229);
+  }
+}
+
 .create-post-rollout:hover {
   color: #4766e7;
   font-weight: 700;
