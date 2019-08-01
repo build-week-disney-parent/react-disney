@@ -68,6 +68,7 @@ export default class CreatePost extends Component {
               value={this.state.title}
               onChange={this.handleChange}
               placeholder="Title of your post?"
+              required
             />
             <label>Attraction</label>
             <input
@@ -77,6 +78,7 @@ export default class CreatePost extends Component {
               value={this.state.attraction}
               onChange={this.handleChange}
               placeholder="Which attraction do you need help at?"
+              required
             />
             <label>Children</label>
             <input
@@ -86,15 +88,17 @@ export default class CreatePost extends Component {
               value={this.state.children}
               onChange={this.handleChange}
               placeholder="How many children?"
+              required
             />
             <label>Time</label>
             <input
-              type="text"
+              type="datetime-local  "
               className="input"
               name="time"
               value={this.state.time}
               onChange={this.handleChange}
               placeholder="What time do you need help?"
+              required
             />
             <button type="submit">create post</button>
           </form>
