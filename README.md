@@ -1,4 +1,6 @@
-# [Disney Parent Web App](https://react-disney.netlify.com/)
+# [Disney Parent React Web App](https://react-disney.netlify.com/)
+
+# [Disnet Parent UI](https://ui-disney.netlify.com/)
 
 ## (Jul 24, 2019 - Aug 5, 2019)
 
@@ -9,13 +11,21 @@
 - [Jules Pierre-Louis (UI/UX)](https://github.com/chefboyrdeuce)
 - [Joseph Alfaro (Backend Developer)](https://github.com/Joe-Alfaro)
 
-### This web app in built using the following:
+### React Web App: This web app is built using the following:
 
+- Node
 - NPM (create-react-app)
 - React
 - React Router
 - Axios
 - Netlify
+- Express
+
+### UI Web Site: This web site is built using the following:
+
+- HTML
+- CSS
+- Javascript
 
 ### MVP Guidelines
 
