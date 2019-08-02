@@ -8,7 +8,7 @@ export default class CreatePost extends Component {
     attraction: "",
     children: "",
     time: "",
-    parent_id: 10
+    parent_id: 7
   };
 
   handleChange = e => {
