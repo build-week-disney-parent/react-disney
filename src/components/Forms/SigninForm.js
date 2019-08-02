@@ -2,13 +2,15 @@ import React, { Component } from "react";
 import "./forms.css";
 import "../../index.css";
 import axios from "axios";
+import ls from "local-storage";
 
 export default class SigninForm extends Component {
   state = {
     username: "",
     email: "",
     password: "",
-    accountType: "parent"
+    accountType: "parent",
+    resData: []
   };
 
   handleChange = e => {
@@ -24,14 +26,17 @@ export default class SigninForm extends Component {
         this.state
       )
       .then(res => {
-        console.log("response", res);
-        console.log(res.data);
-        console.log(res.data.message);
-        console.log(res.status);
-        console.log(res.data.token);
+        // console.log("response", res);
+        // console.log(res.data);
+        // console.log(res.data.message);
+        // console.log(res.status);
+        // console.log(res.data.token);
         if (res.status === 200) {
           console.log("yes status 200");
+          ls.set("token", res.data.token);
+          ls.set("message", res.data.message);
         }
+        // this.setState({ resData: res });
       })
       .catch(err => {
         console.log("error", err);
