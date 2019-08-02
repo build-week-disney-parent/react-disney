@@ -24,8 +24,17 @@ export default class SigninForm extends Component {
         this.state
       )
       .then(res => {
-        console.log(res);
+        console.log("response", res);
         console.log(res.data);
+        console.log(res.data.message);
+        console.log(res.status);
+        console.log(res.data.token);
+        if (res.status === 200) {
+          console.log("yes status 200");
+        }
+      })
+      .catch(err => {
+        console.log("error", err);
       });
   };
 
