@@ -12,6 +12,7 @@ const App = () => {
         <Navbar />
         <div className="container">
           <Switch>
+            {/* <Route path="/" exact component={Signin} /> */}
             <Route path="/signin" component={Signin} />
             <Route path="/dashboard" component={Dashboard} />
           </Switch>
