@@ -3,6 +3,7 @@ import axios from "axios";
 import PostLists from "./components/Dashboard/PostList";
 import Search from "./components/Dashboard/Seach";
 import CreatePost from "./components/Dashboard/CreatePost";
+import li from "local-storage";
 
 export default class Dashboard extends Component {
   state = {
@@ -47,13 +48,23 @@ export default class Dashboard extends Component {
 
   render() {
     const loading = this.state.loading;
+    const message = localStorage.getItem("message").split(" ");
+    const dbMessage = message.splice[0];
+
+    const message_print = dbMessage
+      ? console.log(dbMessage)
+      : "Welcome to your dashboard";
 
     if (loading === true) {
       return <div id="loader" />;
     } else {
       return (
         <React.Fragment>
-          <h2 className="dashb-welcome">Welcome NAME to your dashboard:</h2>
+          {/* <h2 className="dashb-welcome">Welcome NAME to your dashboard:</h2> */}
+          <h2 id="db_message dashb-welcome">
+            {/* {localStorage.getItem("message")} */}
+            {message_print}
+          </h2>
           <Search />
           <CreatePost />
           <PostLists posts={this.state.posts} />

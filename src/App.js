@@ -3,7 +3,12 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Signin from "./Signin";
 import Dashboard from "./Dashboard";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from "react-router-dom";
 
 const App = () => {
   return (
@@ -12,7 +17,7 @@ const App = () => {
         <Navbar />
         <div className="container">
           <Switch>
-            {/* <Route path="/" exact component={Signin} /> */}
+            <Route path="/" exact render={() => <Redirect to="/signin" />} />
             <Route path="/signin" component={Signin} />
             <Route path="/dashboard" component={Dashboard} />
           </Switch>
