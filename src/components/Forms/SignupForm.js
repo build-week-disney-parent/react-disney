@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./forms.css";
 import "../../index.css";
 import axios from "axios";
+import ls from "local-storage";
 
 export default class SignupForm extends Component {
   state = {
@@ -26,6 +27,9 @@ export default class SignupForm extends Component {
       .then(res => {
         console.log(res);
         console.log(res.data);
+        if (res.data === 201) {
+          console.log("Thank you, please log in");
+        }
       });
   };
 

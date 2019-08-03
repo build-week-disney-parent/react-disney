@@ -36,8 +36,13 @@ export default class SigninForm extends Component {
           ls.set("token", res.data.token);
           ls.set("message", res.data.message);
           window.location = "./dashboard";
+        } else {
+          alert("Invalid user information entered. Please try again.");
         }
-        // this.setState({ resData: res });
+
+        // if (res.status === 400) {
+        //   alert("Invalid information entered. Try again");
+        // }
       })
       .catch(err => {
         console.log("error", err);
