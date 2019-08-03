@@ -17,7 +17,7 @@ const App = () => {
         <Navbar />
         <div className="container">
           <Switch>
-            <Route path="/" exact render={() => <Redirect to="/signin" />} />
+            {/* <Route path="/" exact render={() => <Redirect to="/signin" />} /> */}
             <Route path="/signin" component={Signin} />
             <Route path="/dashboard" component={Dashboard} />
           </Switch>
