@@ -6,8 +6,8 @@ import Dashboard from "./Dashboard";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Redirect
+  Route
+  // Redirect
 } from "react-router-dom";
 
 const App = () => {

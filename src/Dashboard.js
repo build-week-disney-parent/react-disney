@@ -48,8 +48,8 @@ export default class Dashboard extends Component {
 
   render() {
     const loading = this.state.loading;
-    const message = localStorage.getItem("message").split(" ");
-    const dbMessage = message.splice[0];
+    const message = localStorage.getItem("message");
+    const dbMessage = message;
 
     const message_print = dbMessage
       ? console.log(dbMessage)
