@@ -11,6 +11,7 @@ export default class Dashboard extends Component {
     posts: [],
     comments: [],
     signedIn: false,
+    signedInMessage: "",
     loading: true
   };
 
@@ -49,11 +50,16 @@ export default class Dashboard extends Component {
   render() {
     const loading = this.state.loading;
     const message = localStorage.getItem("message");
-    const dbMessage = message;
 
-    const message_print = dbMessage
-      ? console.log(dbMessage)
-      : "Welcome to your dashboard";
+    if (this.state.signedIn === true) {
+      this.state.signedInMessage = message;
+    }
+
+    // const dbMessage = message;
+
+    // const message_print = dbMessage
+    //   ? console.log(dbMessage)
+    //   : "Welcome to your dashboard";
 
     if (loading === true) {
       return <div id="loader" />;
@@ -63,7 +69,7 @@ export default class Dashboard extends Component {
           {/* <h2 className="dashb-welcome">Welcome NAME to your dashboard:</h2> */}
           <h2 id="db_message dashb-welcome">
             {/* {localStorage.getItem("message")} */}
-            {message_print}
+            {/* {message} */}
           </h2>
           <Search />
           <CreatePost />

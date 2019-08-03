@@ -6,8 +6,8 @@ import Dashboard from "./Dashboard";
 import {
   BrowserRouter as Router,
   Switch,
-  Route
-  // Redirect
+  Route,
+  Redirect
 } from "react-router-dom";
 
 const App = () => {
@@ -17,9 +17,9 @@ const App = () => {
         <Navbar />
         <div className="container">
           <Switch>
-            {/* <Route path="/" exact render={() => <Redirect to="/signin" />} /> */}
-            <Route path="/signin" component={Signin} />
-            <Route path="/dashboard" component={Dashboard} />
+            <Route path="/" exact render={() => <Redirect to="/signin" />} />
+            <Route path="/signin" exact component={Signin} />
+            <Route path="/dashboard" exact component={Dashboard} />
           </Switch>
         </div>
       </div>

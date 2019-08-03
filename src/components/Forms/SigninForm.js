@@ -35,6 +35,7 @@ export default class SigninForm extends Component {
           console.log("yes status 200");
           ls.set("token", res.data.token);
           ls.set("message", res.data.message);
+          window.location = "./dashboard";
         }
         // this.setState({ resData: res });
       })
