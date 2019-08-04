@@ -11,6 +11,7 @@ export default class Dashboard extends Component {
     posts: [],
     comments: [],
     signedIn: false,
+    signedInMessage: "",
     loading: true
   };
 
@@ -49,11 +50,16 @@ export default class Dashboard extends Component {
   render() {
     const loading = this.state.loading;
     const message = localStorage.getItem("message");
-    const dbMessage = message;
 
-    const message_print = dbMessage
-      ? console.log(dbMessage)
-      : "Welcome to your dashboard";
+    if (this.state.signedIn === true) {
+      this.state.signedInMessage = message;
+    }
+
+    // const dbMessage = message;
+
+    // const message_print = dbMessage
+    //   ? console.log(dbMessage)
+    //   : "Welcome to your dashboard";
 
     if (loading === true) {
       return <div id="loader" />;
@@ -61,17 +67,11 @@ export default class Dashboard extends Component {
       return (
         <React.Fragment>
           {/* <h2 className="dashb-welcome">Welcome NAME to your dashboard:</h2> */}
-          <h2 id="db_message dashb-welcome">
-            {/* {localStorage.getItem("message")} */}
-            {message_print}
-          </h2>
+          <h2 id="db_message dashb-welcome">Welcome to your dashboard!</h2>
           <Search />
           <CreatePost />
           <PostLists posts={this.state.posts} />
           <h3>end</h3>
-          {/* {this.state.parents.map(parent => (
-            <h2>{parent.username}</h2>
-          ))} */}
         </React.Fragment>
       );
     }
