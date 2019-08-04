@@ -67,6 +67,12 @@ button:hover {
   }
 }
 
+@media (max-width: 799px) {
+  .create-post-rollout {
+    margin-top: 2rem;
+  }
+}
+
 .create-post-rollout:hover {
   color: #4766e7;
   font-weight: 700;
