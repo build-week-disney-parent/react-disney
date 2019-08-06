@@ -6,7 +6,7 @@
 
 ## Built for Lambda School Build Week (React Front End Developer) and (UI/UX Developer).
 
-- [Zac Smith (React Developer)](https://github.com/zrsmith75)
+- [Zac Smith (React Developer) WebPT6](https://github.com/zrsmith75)
 - [Nicolas Gallucci (UI/UX)](https://github.com/CryptoN999)
 - [Jules Pierre-Louis (UI/UX)](https://github.com/chefboyrdeuce)
 - [Joseph Alfaro (Backend Developer)](https://github.com/Joe-Alfaro)
